@@ -1,0 +1,87 @@
+
+### Find all
+GET http://localhost:3000/schedule/all
+
+
+
+### Find by day
+GET http://localhost:3000/schedule/day/Lu
+
+
+### Find one
+GET http://localhost:3000/schedule/1
+
+
+
+
+### Post all
+POST http://localhost:3000/schedule/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhbnRpIiwiY2xpZW50SWQiOm51bGwsInJvbGUiOlsiYWRtaW4iXSwiaWF0IjoxNzYxOTMxOTE0LCJleHAiOjE3NjE5MzU1MTR9.31ZwtGPpPdGQqnfSJ-CoQeqYUJ2LcPby7sJZonxDFrU
+
+{
+    "day": 2,
+    "beginTime":"08:30",
+    "endTime":"18:30"
+}
+
+###
+
+POST http://localhost:3000/schedule/
+Content-Type: application/json
+
+{
+    "day": 3,
+    "beginTime":"07:30",
+    "endTime":"18:00"
+}
+
+###
+POST http://localhost:3000/schedule/
+Content-Type: application/json
+
+{
+    "day": 4,
+    "beginTime":"07:30",
+    "endTime":"18:00"
+}
+
+###
+POST http://localhost:3000/schedule/
+Content-Type: application/json
+
+{
+    "day": 1,
+    "beginTime":"09:30",
+    "endTime":"18:00"
+}
+
+###
+POST http://localhost:3000/schedule/
+Content-Type: application/json
+
+{
+    "day": 5,
+    "beginTime":"08:30",
+    "endTime":"18:00"
+}
+
+
+
+### LPM
+PUT http://localhost:3000/schedule/1
+Content-Type: application/json
+
+{
+    "day": 4,
+    "beginTime":"08:30",
+    "endTime":"19:00"
+}
+
+
+### Sida
+DELETE http://localhost:3000/schedule/3
+
+
+### Search
+GET http://localhost:3000/schedule/search
