@@ -1,0 +1,31 @@
+### GET all materials
+GET http://localhost:3000/supplies/all
+
+### GET material by ID
+GET http://localhost:3000/supplies/3
+
+### POST create
+POST http://localhost:3000/supplies
+Content-Type: application/json
+
+{
+  "name": "Tintura",
+  "description": "castaño",
+  "stock": 100
+}
+
+### PUT update
+PUT http://localhost:3000/supplies/2
+Content-Type: application/json
+
+{
+  "type": "supplies",
+  "name": "Tintura",
+  "description": "rojo",
+  "stock": 100
+}
+
+### DELETE
+DELETE http://localhost:3000/supplies/1
+
+

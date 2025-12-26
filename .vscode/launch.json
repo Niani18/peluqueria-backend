@@ -1,0 +1,59 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "build",
+            "runtimeExecutable": "nest",
+            "runtimeArgs": ["build"],
+            "autoAttachChildProcesses": true,
+            "restart": true,
+            "sourceMaps": true,
+            "stopOnEntry": false,
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "start",
+            "runtimeExecutable": "nest",
+            "runtimeArgs": ["start"],
+            "autoAttachChildProcesses": true,
+            "restart": true,
+            "sourceMaps": true,
+            "stopOnEntry": false,
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "start:dev",
+            "runtimeExecutable": "nest",
+            "runtimeArgs": ["start", "--watch"],
+            "autoAttachChildProcesses": true,
+            "restart": true,
+            "sourceMaps": true,
+            "stopOnEntry": false,
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "start:debug",
+            "runtimeExecutable": "nest",
+            "runtimeArgs": ["start", "--debug", "--watch"],
+            "autoAttachChildProcesses": true,
+            "restart": true,
+            "sourceMaps": true,
+            "stopOnEntry": false,
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+        }
+    ]
+}
