@@ -1,0 +1,27 @@
+### Find all
+GET http://localhost:3000/service-types/
+
+### Find one
+GET http://localhost:3000/service-types/1
+
+### Add
+POST http://localhost:3000/service-types/
+Content-Type: application/json
+
+{
+  "name": "Tintura",
+  "description": "Queda de 10"
+}
+
+
+### Update
+PUT http://localhost:3000/service-types/1
+Content-Type: application/json
+
+{
+  "name": "Corte",
+  "description": "Corte de pelo"
+}
+
+### Delete
+DELETE http://localhost:3000/service-types/1

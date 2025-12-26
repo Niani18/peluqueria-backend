@@ -1,0 +1,50 @@
+### Find all
+GET http://localhost:3000/service/
+
+
+### Find one
+GET http://localhost:3000/service/2
+
+### Add
+POST http://localhost:3000/service/
+Content-Type: application/json
+
+{
+  "name": "Tintura Roja",
+  "description": "pelo precioso",
+  "duration": 1,
+  "serviceType": 1,
+  "tools": [3],
+  "supplies": [1],
+  "price": {
+    "amount": "2000.00"
+  }
+}
+
+
+### Update
+PATCH http://localhost:3000/service/1
+Content-Type: application/json
+
+{
+  "state": false
+}
+
+### Update price
+POST  http://localhost:3000/service/2/price
+Content-Type: application/json
+
+{
+  "amount": 1000
+}
+
+
+
+### Delete
+DELETE http://localhost:3000/service/2
+
+
+
+### Search
+
+GET http://localhost:3000/service/search?
