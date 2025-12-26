@@ -1,0 +1,52 @@
+### Find all
+GET http://localhost:3000/appointment/all
+
+### Find one
+GET http://localhost:3000/appointment/0
+
+
+### Post
+POST  http://localhost:3000/appointment/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hcnRpbk1hcnRpbmV6IiwiY2xpZW50SWQiOjEsInJvbGUiOm51bGwsImlhdCI6MTc2MjMwODg4MiwiZXhwIjoxNzYyMzEyNDgyfQ.wTNZU5CiH7OByvOCA7FSSEJlZ4Cf5J59Lq4cqZvxP5s
+
+{
+    "dateTimeAppointment": "2025-11-11T12:00",
+    "service": [1],
+    "sign": {
+        "amount" : "300.00"
+    }
+}
+
+### Create Payment
+POST http://localhost:3000/appointment/payment
+Content-Type: application/json
+
+{
+    "amount": "600.00",
+    "appointment": 2
+}
+
+### Find all payments
+GET http://localhost:3000/appointment/payment
+
+
+### Search with pagination and sorting
+GET http://localhost:3000/appointment/search-user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hcnRpbk1hcnRpbmV6IiwiY2xpZW50SWQiOjEsInJvbGUiOm51bGwsImlhdCI6MTc2MjMwODg4MiwiZXhwIjoxNzYyMzEyNDgyfQ.wTNZU5CiH7OByvOCA7FSSEJlZ4Cf5J59Lq4cqZvxP5s
+
+###
+PATCH http://localhost:3000/appointment/user/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFzZGFzZGFzZCIsImNsaWVudElkIjoxLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNzYyMjYxODEwLCJleHAiOjE3NjIyNjU0MTB9.NJZQqmkD_hp1JBnUF1hUR04Nw-0qQN-GJxA_W8zMixI
+
+
+###
+POST http://localhost:3000/appointment/payment/checkout
+Content-Type: application/json
+
+{ 
+    
+    "appointmentId": 1, 
+    "amount": 15000 
+
+}
