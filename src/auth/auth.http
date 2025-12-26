@@ -1,0 +1,26 @@
+###
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+  "username": "Juancito",
+  "password": "Punga_1234",
+  "passwordConfirm": "Punga_1234",
+  "client": {
+    "name": "Juancito", 
+    "surname": "Hernandez",
+    "email": "julian.sosa@example.com",
+    "phone": "15523456789"
+  }
+}
+
+
+
+###
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "username": "MartinMartinez",
+  "password": "Sa@45657438"
+}
