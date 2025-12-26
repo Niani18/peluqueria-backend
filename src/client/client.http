@@ -1,0 +1,62 @@
+###
+GET http://localhost:3000/client/all
+
+###
+GET http://localhost:3000/client/3
+
+###
+POST http://localhost:3000/client
+Content-Type: application/json
+
+{ 
+  "name": "Manolo", 
+  "surname": "Juarez",
+  "email": "sgiusti@gmail.com",
+  "phone": "123456789",
+  "password": "Sa@45657438"
+}
+
+###
+PUT http://localhost:3000/client/3
+Content-Type: application/json
+
+{
+  "name": "Manolo",
+  "surname": "Juarez",
+  "email": "manolitoHipoglos@gmail.com",
+  "phone" : "123456789"
+}
+
+
+###
+DELETE http://localhost:3000/client/3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###
+GET http://localhost:3000/client/search
