@@ -101,3 +101,8 @@ pnpm install
 ```bash
 pnpm start:dev
 ```
+
+## Documentación técnica
+
+- Diagrama Entidad–Relación (DER): `docs/database/database-erd.png`
+
